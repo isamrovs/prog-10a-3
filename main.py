@@ -1,14 +1,13 @@
 from math import*
-a=int(input("Ievadiet a:"))
-b=int(input("Ievadiet b:"))
-c=int(input("Ievadiet c:"))
-D=b**2-4*a*c
-if D<0:
-  print("Sakņu nav!")
-elif D==0:
-  x=-b/2*a
-  print("Ir viena sakne: ",x)
+sk1=int(input("Ievadiet trijstūra vislielāko leņķi: "))
+sk2=int(input("Ievadiet otro trijstūra leņķi: "))
+sk3=int(input("Ievadiet trešo trijstūra leņķi: "))
+if sk1+sk2+sk3==180:
+ if sk1==90:
+   print("Tas ir taisnleņķa trijstūris!")
+ elif sk1>90:
+   print("Tas ir platleņķa trijstūris!")
+ elif sk1<90:
+   print("Tas ir šaurleņķu trijstūris!")
 else:
-  x1=(-b+sqrt(D))/2*a
-  x2=(-b-sqrt(D))/2*a
-  print("Ir divas saknes, x1 = ",x1," x2 =",x2)
+  print("Tas nav trijstūris!")
